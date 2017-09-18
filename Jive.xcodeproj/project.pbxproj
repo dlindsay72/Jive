@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E18C46111188832A104ECF5 /* Pods_Jive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD653914C4ED31126B1CB57D /* Pods_Jive.framework */; };
+		7B28F38E1F7085A500AA8781 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28F38D1F7085A500AA8781 /* AuthService.swift */; };
 		7B2CC86E1F702B85007C6D0C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CC86D1F702B85007C6D0C /* GradientView.swift */; };
 		7B2CC8711F70360D007C6D0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CC8701F70360D007C6D0C /* Constants.swift */; };
 		7B75925F1F6C7EDF00D76305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B75925E1F6C7EDF00D76305 /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		4EAE411720CFE013556B200F /* Pods-Jive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jive.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jive/Pods-Jive.release.xcconfig"; sourceTree = "<group>"; };
 		5D89A1D6C0DDF672807FD553 /* Pods-Jive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jive/Pods-Jive.debug.xcconfig"; sourceTree = "<group>"; };
+		7B28F38D1F7085A500AA8781 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		7B2CC86D1F702B85007C6D0C /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		7B2CC8701F70360D007C6D0C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7B75925B1F6C7EDF00D76305 /* Jive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jive.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7B28F38C1F70859100AA8781 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7B28F38D1F7085A500AA8781 /* AuthService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		7B2CC86F1F7035F6007C6D0C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 		7B75925D1F6C7EDF00D76305 /* Jive */ = {
 			isa = PBXGroup;
 			children = (
+				7B28F38C1F70859100AA8781 /* Services */,
 				7B2CC86F1F7035F6007C6D0C /* Utilities */,
 				7BB8B37D1F70105400847764 /* Model */,
 				7BB8B37C1F70104600847764 /* View */,
@@ -290,6 +301,7 @@
 				7BB8B3851F70143500847764 /* ChannelVC.swift in Sources */,
 				7BB8B3831F70142300847764 /* ChatVC.swift in Sources */,
 				7BEB6D241F70469100607AC8 /* CreateAccountVC.swift in Sources */,
+				7B28F38E1F7085A500AA8781 /* AuthService.swift in Sources */,
 				7BEB6D221F703B9000607AC8 /* LoginVC.swift in Sources */,
 				7B2CC86E1F702B85007C6D0C /* GradientView.swift in Sources */,
 				7B75925F1F6C7EDF00D76305 /* AppDelegate.swift in Sources */,
