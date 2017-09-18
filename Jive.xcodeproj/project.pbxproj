@@ -18,6 +18,7 @@
 		7BB8B3831F70142300847764 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB8B3821F70142300847764 /* ChatVC.swift */; };
 		7BB8B3851F70143500847764 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB8B3841F70143500847764 /* ChannelVC.swift */; };
 		7BEB6D221F703B9000607AC8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEB6D211F703B9000607AC8 /* LoginVC.swift */; };
+		7BEB6D241F70469100607AC8 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEB6D231F70469100607AC8 /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		7BB8B3821F70142300847764 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		7BB8B3841F70143500847764 /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		7BEB6D211F703B9000607AC8 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		7BEB6D231F70469100607AC8 /* CreateAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		DD653914C4ED31126B1CB57D /* Pods_Jive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 				7BB8B3821F70142300847764 /* ChatVC.swift */,
 				7BB8B3841F70143500847764 /* ChannelVC.swift */,
 				7BEB6D211F703B9000607AC8 /* LoginVC.swift */,
+				7BEB6D231F70469100607AC8 /* CreateAccountVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			files = (
 				7BB8B3851F70143500847764 /* ChannelVC.swift in Sources */,
 				7BB8B3831F70142300847764 /* ChatVC.swift in Sources */,
+				7BEB6D241F70469100607AC8 /* CreateAccountVC.swift in Sources */,
 				7BEB6D221F703B9000607AC8 /* LoginVC.swift in Sources */,
 				7B2CC86E1F702B85007C6D0C /* GradientView.swift in Sources */,
 				7B75925F1F6C7EDF00D76305 /* AppDelegate.swift in Sources */,

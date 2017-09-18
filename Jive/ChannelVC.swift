@@ -10,6 +10,7 @@ import UIKit
 
 class ChannelVC: UIViewController {
     
+    //MARK: IBOutlets
     
     @IBOutlet weak var loginBtn: UIButton!
 
@@ -22,5 +23,8 @@ class ChannelVC: UIViewController {
     @IBAction func loginBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
     }
+    
+    //MARK: IBActions
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {}
 
 }
