@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E18C46111188832A104ECF5 /* Pods_Jive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD653914C4ED31126B1CB57D /* Pods_Jive.framework */; };
 		7B75925F1F6C7EDF00D76305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B75925E1F6C7EDF00D76305 /* AppDelegate.swift */; };
 		7B7592611F6C7EDF00D76305 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7592601F6C7EDF00D76305 /* ViewController.swift */; };
 		7B7592641F6C7EDF00D76305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7592621F6C7EDF00D76305 /* Main.storyboard */; };
 		7B7592661F6C7EDF00D76305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7592651F6C7EDF00D76305 /* Assets.xcassets */; };
 		7B7592691F6C7EDF00D76305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7592671F6C7EDF00D76305 /* LaunchScreen.storyboard */; };
+		7BB8B3811F70111200847764 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB8B3801F70111200847764 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4EAE411720CFE013556B200F /* Pods-Jive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jive.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jive/Pods-Jive.release.xcconfig"; sourceTree = "<group>"; };
+		5D89A1D6C0DDF672807FD553 /* Pods-Jive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jive/Pods-Jive.debug.xcconfig"; sourceTree = "<group>"; };
 		7B75925B1F6C7EDF00D76305 /* Jive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B75925E1F6C7EDF00D76305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B7592601F6C7EDF00D76305 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		7B7592651F6C7EDF00D76305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B7592681F6C7EDF00D76305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B75926A1F6C7EDF00D76305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB8B37E1F70111200847764 /* Jive-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jive-Bridging-Header.h"; sourceTree = "<group>"; };
+		7BB8B37F1F70111200847764 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		7BB8B3801F70111200847764 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		DD653914C4ED31126B1CB57D /* Pods_Jive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E18C46111188832A104ECF5 /* Pods_Jive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7405B2ADE69C05A42AB5E853 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD653914C4ED31126B1CB57D /* Pods_Jive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B7592521F6C7EDF00D76305 = {
 			isa = PBXGroup;
 			children = (
 				7B75925D1F6C7EDF00D76305 /* Jive */,
 				7B75925C1F6C7EDF00D76305 /* Products */,
+				D014D058503F652C56521917 /* Pods */,
+				7405B2ADE69C05A42AB5E853 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +73,10 @@
 		7B75925D1F6C7EDF00D76305 /* Jive */ = {
 			isa = PBXGroup;
 			children = (
+				7BB8B37D1F70105400847764 /* Model */,
+				7BB8B37C1F70104600847764 /* View */,
+				7BB8B37B1F70103F00847764 /* Controller */,
+				7BB8B37A1F70102D00847764 /* Supporting Files */,
 				7B75925E1F6C7EDF00D76305 /* AppDelegate.swift */,
 				7B7592601F6C7EDF00D76305 /* ViewController.swift */,
 				7B7592621F6C7EDF00D76305 /* Main.storyboard */,
@@ -64,6 +87,46 @@
 			path = Jive;
 			sourceTree = "<group>";
 		};
+		7BB8B37A1F70102D00847764 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BB8B37F1F70111200847764 /* SWRevealViewController.h */,
+				7BB8B3801F70111200847764 /* SWRevealViewController.m */,
+				7BB8B37E1F70111200847764 /* Jive-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BB8B37B1F70103F00847764 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7BB8B37C1F70104600847764 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7BB8B37D1F70105400847764 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D014D058503F652C56521917 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D89A1D6C0DDF672807FD553 /* Pods-Jive.debug.xcconfig */,
+				4EAE411720CFE013556B200F /* Pods-Jive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B75926D1F6C7EDF00D76305 /* Build configuration list for PBXNativeTarget "Jive" */;
 			buildPhases = (
+				CCC4F099E819EC311DF44392 /* [CP] Check Pods Manifest.lock */,
 				7B7592571F6C7EDF00D76305 /* Sources */,
 				7B7592581F6C7EDF00D76305 /* Frameworks */,
 				7B7592591F6C7EDF00D76305 /* Resources */,
+				B96EFEFA718B5BA7210DD4F0 /* [CP] Embed Pods Frameworks */,
+				9F998F23F3D664D93469DEB2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +163,7 @@
 					7B75925A1F6C7EDF00D76305 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 999T2QHS45;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +199,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9F998F23F3D664D93469DEB2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jive/Pods-Jive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B96EFEFA718B5BA7210DD4F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Jive/Pods-Jive-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/StarscreamSocketIO/StarscreamSocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StarscreamSocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jive/Pods-Jive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCC4F099E819EC311DF44392 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B7592571F6C7EDF00D76305 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +266,7 @@
 			files = (
 				7B7592611F6C7EDF00D76305 /* ViewController.swift in Sources */,
 				7B75925F1F6C7EDF00D76305 /* AppDelegate.swift in Sources */,
+				7BB8B3811F70111200847764 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,26 +389,33 @@
 		};
 		7B75926E1F6C7EDF00D76305 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D89A1D6C0DDF672807FD553 /* Pods-Jive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 999T2QHS45;
 				INFOPLIST_FILE = Jive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreamerongo.Jive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Jive/Jive-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		7B75926F1F6C7EDF00D76305 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EAE411720CFE013556B200F /* Pods-Jive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 999T2QHS45;
 				INFOPLIST_FILE = Jive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreamerongo.Jive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Jive/Jive-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +439,7 @@
 				7B75926F1F6C7EDF00D76305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
