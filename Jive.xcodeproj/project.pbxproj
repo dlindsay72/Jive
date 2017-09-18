@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E18C46111188832A104ECF5 /* Pods_Jive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD653914C4ED31126B1CB57D /* Pods_Jive.framework */; };
+		7B2CC86E1F702B85007C6D0C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CC86D1F702B85007C6D0C /* GradientView.swift */; };
 		7B75925F1F6C7EDF00D76305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B75925E1F6C7EDF00D76305 /* AppDelegate.swift */; };
 		7B7592641F6C7EDF00D76305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7592621F6C7EDF00D76305 /* Main.storyboard */; };
 		7B7592661F6C7EDF00D76305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7592651F6C7EDF00D76305 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		4EAE411720CFE013556B200F /* Pods-Jive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jive.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jive/Pods-Jive.release.xcconfig"; sourceTree = "<group>"; };
 		5D89A1D6C0DDF672807FD553 /* Pods-Jive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jive/Pods-Jive.debug.xcconfig"; sourceTree = "<group>"; };
+		7B2CC86D1F702B85007C6D0C /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		7B75925B1F6C7EDF00D76305 /* Jive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B75925E1F6C7EDF00D76305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B7592631F6C7EDF00D76305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		7BB8B37C1F70104600847764 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7B2CC86D1F702B85007C6D0C /* GradientView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				7BB8B3851F70143500847764 /* ChannelVC.swift in Sources */,
 				7BB8B3831F70142300847764 /* ChatVC.swift in Sources */,
+				7B2CC86E1F702B85007C6D0C /* GradientView.swift in Sources */,
 				7B75925F1F6C7EDF00D76305 /* AppDelegate.swift in Sources */,
 				7BB8B3811F70111200847764 /* SWRevealViewController.m in Sources */,
 			);
