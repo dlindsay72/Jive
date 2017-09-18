@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		0E18C46111188832A104ECF5 /* Pods_Jive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD653914C4ED31126B1CB57D /* Pods_Jive.framework */; };
 		7B75925F1F6C7EDF00D76305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B75925E1F6C7EDF00D76305 /* AppDelegate.swift */; };
-		7B7592611F6C7EDF00D76305 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7592601F6C7EDF00D76305 /* ViewController.swift */; };
 		7B7592641F6C7EDF00D76305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7592621F6C7EDF00D76305 /* Main.storyboard */; };
 		7B7592661F6C7EDF00D76305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7592651F6C7EDF00D76305 /* Assets.xcassets */; };
 		7B7592691F6C7EDF00D76305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7592671F6C7EDF00D76305 /* LaunchScreen.storyboard */; };
 		7BB8B3811F70111200847764 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB8B3801F70111200847764 /* SWRevealViewController.m */; };
+		7BB8B3831F70142300847764 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB8B3821F70142300847764 /* ChatVC.swift */; };
+		7BB8B3851F70143500847764 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB8B3841F70143500847764 /* ChannelVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +22,6 @@
 		5D89A1D6C0DDF672807FD553 /* Pods-Jive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jive/Pods-Jive.debug.xcconfig"; sourceTree = "<group>"; };
 		7B75925B1F6C7EDF00D76305 /* Jive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B75925E1F6C7EDF00D76305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B7592601F6C7EDF00D76305 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B7592631F6C7EDF00D76305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B7592651F6C7EDF00D76305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B7592681F6C7EDF00D76305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,6 +29,8 @@
 		7BB8B37E1F70111200847764 /* Jive-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jive-Bridging-Header.h"; sourceTree = "<group>"; };
 		7BB8B37F1F70111200847764 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		7BB8B3801F70111200847764 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		7BB8B3821F70142300847764 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		7BB8B3841F70143500847764 /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		DD653914C4ED31126B1CB57D /* Pods_Jive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,7 +80,6 @@
 				7BB8B37B1F70103F00847764 /* Controller */,
 				7BB8B37A1F70102D00847764 /* Supporting Files */,
 				7B75925E1F6C7EDF00D76305 /* AppDelegate.swift */,
-				7B7592601F6C7EDF00D76305 /* ViewController.swift */,
 				7B7592621F6C7EDF00D76305 /* Main.storyboard */,
 				7B7592651F6C7EDF00D76305 /* Assets.xcassets */,
 				7B7592671F6C7EDF00D76305 /* LaunchScreen.storyboard */,
@@ -100,6 +101,8 @@
 		7BB8B37B1F70103F00847764 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7BB8B3821F70142300847764 /* ChatVC.swift */,
+				7BB8B3841F70143500847764 /* ChannelVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -264,7 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B7592611F6C7EDF00D76305 /* ViewController.swift in Sources */,
+				7BB8B3851F70143500847764 /* ChannelVC.swift in Sources */,
+				7BB8B3831F70142300847764 /* ChatVC.swift in Sources */,
 				7B75925F1F6C7EDF00D76305 /* AppDelegate.swift in Sources */,
 				7BB8B3811F70111200847764 /* SWRevealViewController.m in Sources */,
 			);
