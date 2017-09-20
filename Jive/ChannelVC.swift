@@ -16,6 +16,8 @@ class ChannelVC: UIViewController {
     @IBOutlet weak var profileImage: CircleImage!
     @IBOutlet weak var tableView: UITableView!
     
+    //MARK:  Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,9 +26,15 @@ class ChannelVC: UIViewController {
         
     }
     
-    //MARK:  Methods
+    override func viewDidAppear(_ animated: Bool) {
+        setupUserInfo()
+    }
     
     func userDataDidChange(_ notif: Notification) {
+        setupUserInfo()
+    }
+    
+    func setupUserInfo() {
         if AuthService.instance.isLoggedIn {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
             profileImage.image = UIImage(named: UserDataService.instance.avatarName)
