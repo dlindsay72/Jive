@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="Jive" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="WMR-ud-bec" id="DcJ-cJ-a5N"/>
+                <outlet property="profileImage" destination="Y2P-Ri-E7h" id="t87-Fu-MY8"/>
+                <outlet property="userEmail" destination="YVm-o2-iGd" id="RVZ-lI-lpB"/>
+                <outlet property="userName" destination="lZE-MN-pxy" id="F4I-eA-z4k"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMR-ud-bec" userLabel="bgView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ys5-NI-ale">
+                    <rect key="frame" x="20" y="153.5" width="335" height="360"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxW-F7-B9D">
+                            <rect key="frame" x="299" y="8" width="28" height="28"/>
+                            <state key="normal" image="closeButton"/>
+                            <connections>
+                                <action selector="closeModalPressed:" destination="-1" eventType="touchUpInside" id="Rfn-tG-CpJ"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Uj1-YU-rzT">
+                            <rect key="frame" x="70.5" y="52.5" width="194" height="215"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FE-Fi-eaz">
+                                    <rect key="frame" x="34" y="0.0" width="126" height="26"/>
+                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                    <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Y2P-Ri-E7h" customClass="CircleImage" customModule="Jive" customModuleProvider="target">
+                                    <rect key="frame" x="47" y="40" width="100" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="E5A-gJ-MyX"/>
+                                        <constraint firstAttribute="width" constant="100" id="paE-zh-2eK"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Superrhineorockinit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZE-MN-pxy">
+                                    <rect key="frame" x="17.5" y="154" width="159.5" height="23.5"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                    <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="superrhinome@jive.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVm-o2-iGd">
+                                    <rect key="frame" x="0.0" y="191.5" width="194" height="23.5"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                    <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3n-6b-jSg">
+                            <rect key="frame" x="130" y="314" width="74" height="38"/>
+                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                            <state key="normal" title="Logout">
+                                <color key="titleColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="logoutPressed:" destination="-1" eventType="touchUpInside" id="AAw-sE-ETf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="mxW-F7-B9D" secondAttribute="trailing" constant="8" id="3XW-i9-Uc1"/>
+                        <constraint firstItem="t3n-6b-jSg" firstAttribute="centerX" secondItem="ys5-NI-ale" secondAttribute="centerX" id="5Yz-qc-3sy"/>
+                        <constraint firstItem="mxW-F7-B9D" firstAttribute="top" secondItem="ys5-NI-ale" secondAttribute="top" constant="8" id="NoD-xq-Qbo"/>
+                        <constraint firstAttribute="height" constant="360" id="rKg-cq-W4J"/>
+                        <constraint firstAttribute="bottom" secondItem="t3n-6b-jSg" secondAttribute="bottom" constant="8" id="sVy-Pq-nIs"/>
+                        <constraint firstItem="Uj1-YU-rzT" firstAttribute="centerX" secondItem="ys5-NI-ale" secondAttribute="centerX" id="x8K-YO-RH5"/>
+                        <constraint firstItem="Uj1-YU-rzT" firstAttribute="centerY" secondItem="ys5-NI-ale" secondAttribute="centerY" constant="-20" id="z3b-2t-1uv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WMR-ud-bec" secondAttribute="trailing" id="Id5-Vm-Zx2"/>
+                <constraint firstAttribute="bottom" secondItem="WMR-ud-bec" secondAttribute="bottom" id="NJk-p9-Z49"/>
+                <constraint firstItem="ys5-NI-ale" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="OyW-DH-AwN"/>
+                <constraint firstItem="WMR-ud-bec" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Y5k-Om-SgZ"/>
+                <constraint firstItem="WMR-ud-bec" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gJz-iU-deN"/>
+                <constraint firstItem="ys5-NI-ale" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="klg-n7-Iim"/>
+                <constraint firstAttribute="trailing" secondItem="ys5-NI-ale" secondAttribute="trailing" constant="20" id="liJ-Cy-EF1"/>
+            </constraints>
+            <point key="canvasLocation" x="-463" y="-71"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeButton" width="28" height="28"/>
+        <image name="profileDefault" width="192" height="192"/>
+    </resources>
+</document>
