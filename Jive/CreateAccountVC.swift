@@ -73,7 +73,6 @@ class CreateAccountVC: UIViewController {
             if success {
                 AuthService.instance.loginUser(email: email, password: pass, completion: { (success) in
                     if success {
-                       // print("logged in user!", AuthService.instance.authToken)
                         AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
                             if success {
                                 self.spinner.isHidden = true
@@ -101,7 +100,6 @@ class CreateAccountVC: UIViewController {
     func handleTap() { // in Swift 4, add @objc before func
         view.endEditing(true)
     }
-    
 
 }
 

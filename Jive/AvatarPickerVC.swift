@@ -40,7 +40,6 @@ class AvatarPickerVC: UIViewController {
         
         avatarCollectionView.reloadData()
     }
-    
 }
 
 //MARK: Collection View Delegate

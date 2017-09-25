@@ -22,7 +22,6 @@ class LoginVC: UIViewController {
         setupView()
     }
     
-    
     //MARK: IBActions
 
     @IBAction func closeBtnPressed(_ sender: Any) {
@@ -52,8 +51,6 @@ class LoginVC: UIViewController {
                 })
             }
         }
-        
-        
     }
     
     func setupView() {

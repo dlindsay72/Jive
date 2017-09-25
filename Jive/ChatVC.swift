@@ -56,16 +56,6 @@ class ChatVC: UIViewController {
             }
         }
         
-//        SocketService.instance.getChatMessage { (success) in
-//            if success {
-//                self.tableView.reloadData()
-//                if MessageService.instance.messages.count > 0 {
-//                    let endIndex = IndexPath(row: MessageService.instance.messages.count - 1, section: 0)
-//                    self.tableView.scrollToRow(at: endIndex, at: .bottom, animated: false)
-//                }
-//            }
-//        }
-        
         SocketService.instance.getTypingUsers { (typingUsers) in
             guard let channelId = MessageService.instance.selectedChannel?.id else { return }
             var names = ""
@@ -98,8 +88,6 @@ class ChatVC: UIViewController {
                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
             })
         }
-        
-        
     }
     
     func handleTap() {
@@ -128,7 +116,6 @@ class ChatVC: UIViewController {
     func onLoginGetMessages() {
         MessageService.instance.findAllChannel { (success) in
             if success {
-                // do stuff with channels
                 if MessageService.instance.channels.count > 0 {
                     MessageService.instance.selectedChannel = MessageService.instance.channels[0]
                     self.updateWithChannel()
@@ -186,10 +173,6 @@ class ChatVC: UIViewController {
 //MARK: TableViewDelegate
 
 extension ChatVC: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-    
     
 }
 
