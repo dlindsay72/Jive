@@ -597,6 +597,9 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="messageBoxEditing:" destination="afk-UT-2yF" eventType="editingChanged" id="wU3-kg-CMR"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWy-CA-e9c">
                                 <rect key="frame" x="337" y="632" width="30" height="30"/>
@@ -685,6 +688,7 @@
                         <outlet property="channelNameLbl" destination="QEH-A6-p8z" id="OUP-t2-d5r"/>
                         <outlet property="menuBtn" destination="cav-VX-Teo" id="SYt-Kx-CiK"/>
                         <outlet property="messageTextField" destination="FPq-HV-p4y" id="SmM-9U-kmP"/>
+                        <outlet property="sendBtn" destination="zWy-CA-e9c" id="l1t-gq-ksW"/>
                         <outlet property="tableView" destination="qDf-gI-dqY" id="Vx9-7F-5NB"/>
                     </connections>
                 </viewController>
