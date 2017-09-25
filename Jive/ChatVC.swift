@@ -12,6 +12,7 @@ class ChatVC: UIViewController {
     
     //MARK: - IBOutlets
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var channelNameLbl: UILabel!
     @IBOutlet weak var messageTextField: UITextField!
@@ -19,6 +20,9 @@ class ChatVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.bindToKeyboard()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(ChatVC.handleTap))
         view.addGestureRecognizer(tap)
@@ -78,7 +82,9 @@ class ChatVC: UIViewController {
     func getMessages() {
         guard let channelId = MessageService.instance.selectedChannel?.id else { return }
         MessageService.instance.findAllMessagesForChannel(channelId: channelId) { (success) in
-            
+            if success {
+                self.tableView.reloadData()
+            }
         }
     }
     
@@ -96,6 +102,35 @@ class ChatVC: UIViewController {
         }
     }
 
+}
+
+//MARK: TableViewDelegate
+
+extension ChatVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+}
+
+extension ChatVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: MESSAGE_CELL, for: indexPath) as? MessageCell {
+            let message = MessageService.instance.messages[indexPath.row]
+            cell.configureCell(message: message)
+            
+            return cell
+        } else {
+            return UITableViewCell()
+        }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return MessageService.instance.messages.count
+    }
 }
 
 

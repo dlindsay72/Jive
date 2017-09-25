@@ -64,6 +64,7 @@ class MessageService {
                     completion(true)
                 }
             } else {
+                print("SHITFUCK")
                 debugPrint(response.result.error as Any)
                 completion(false)
             }
