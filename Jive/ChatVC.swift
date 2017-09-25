@@ -24,6 +24,9 @@ class ChatVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        tableView.estimatedRowHeight = 80
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(ChatVC.handleTap))
         view.addGestureRecognizer(tap)
 
@@ -110,6 +113,8 @@ extension ChatVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
+    
+    
 }
 
 extension ChatVC: UITableViewDataSource {
