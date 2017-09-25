@@ -667,6 +667,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhY-Vs-Eq1">
+                                <rect key="frame" x="8" y="621" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -676,7 +682,9 @@
                             <constraint firstItem="FPq-HV-p4y" firstAttribute="top" secondItem="qDf-gI-dqY" secondAttribute="bottom" constant="30" id="Bcj-WC-LYj"/>
                             <constraint firstAttribute="trailing" secondItem="FPq-HV-p4y" secondAttribute="trailing" id="BrI-zb-cmj"/>
                             <constraint firstItem="qDf-gI-dqY" firstAttribute="top" secondItem="Ga3-1F-VEX" secondAttribute="bottom" id="FIF-X3-RYh"/>
+                            <constraint firstItem="FPq-HV-p4y" firstAttribute="top" secondItem="IhY-Vs-Eq1" secondAttribute="bottom" constant="6" id="G0K-vU-ol9"/>
                             <constraint firstItem="zWy-CA-e9c" firstAttribute="centerY" secondItem="FPq-HV-p4y" secondAttribute="centerY" id="R75-vq-Ev5"/>
+                            <constraint firstItem="IhY-Vs-Eq1" firstAttribute="leading" secondItem="omf-un-tJI" secondAttribute="leading" constant="8" id="UPb-JB-Vvv"/>
                             <constraint firstAttribute="trailing" secondItem="Ga3-1F-VEX" secondAttribute="trailing" id="fFa-AO-wND"/>
                             <constraint firstAttribute="trailing" secondItem="qDf-gI-dqY" secondAttribute="trailing" id="qIj-uk-nBU"/>
                             <constraint firstItem="Ga3-1F-VEX" firstAttribute="leading" secondItem="omf-un-tJI" secondAttribute="leading" id="sMK-Q8-vOx"/>
@@ -690,6 +698,7 @@
                         <outlet property="messageTextField" destination="FPq-HV-p4y" id="SmM-9U-kmP"/>
                         <outlet property="sendBtn" destination="zWy-CA-e9c" id="l1t-gq-ksW"/>
                         <outlet property="tableView" destination="qDf-gI-dqY" id="Vx9-7F-5NB"/>
+                        <outlet property="typingUsersLbl" destination="IhY-Vs-Eq1" id="cyg-gh-EgQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bwr-4n-Btc" userLabel="First Responder" sceneMemberID="firstResponder"/>
